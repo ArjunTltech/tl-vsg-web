@@ -39,36 +39,37 @@ const CareerPageWithOpenings = () => {
                         If you’re ready to grow with a dynamic team, thrive on innovation, and believe in creating real value, we’d love to hear from you.
 
                     </p>
-                <div className={`${styles.section} `}>
-                    <h2 className={styles.sectionHeading}>Ready to Apply?</h2>
+                    <div className={`${styles.section} `}>
+                        <h2 className={styles.sectionHeading}>Ready to Apply?</h2>
 
-                    <div className={styles.applicationContent}>
-                    <p className={styles.applicationText}>
-  {careers && careers.length > 0 ? (
-    <>
-      Email your resume, cover letter, and portfolio links with the position name in the subject line to:{" "}
-      <a href="mailto:careers@vsgenxsolutions.com" className={styles.emailLink}>
-        careers@vsgenxsolutions.com
-      </a>
-    </>
-  ) : (
-    <>
-      Even though we don't have current openings, we welcome you to send your resume for future opportunities to:{" "}
-      <a href="mailto:careers@vsgenxsolutions.com" className={styles.emailLink}>
-        careers@vsgenxsolutions.com
-      </a>
-    </>
-  )}
-</p>
+                        <div className={styles.applicationContent}>
+                            <p className={styles.applicationText}>
+                                {careers && careers.length > 0 ? (
+                                    <>
+                                        Email your resume, cover letter, and portfolio links with the position name in the subject line to:{" "}
+                                        <a href="mailto:careers@vsgenxsolutions.com" className={styles.emailLink}>
+                                            careers@vsgenxsolutions.com
+                                        </a>
+                                    </>
+                                ) : (
+                                    <>
+                                        Even though we don&apos;t have current openings, we welcome you to send your resume for future opportunities to:{" "}
+                                        <a href="mailto:careers@vsgenxsolutions.com" className={styles.emailLink}>
+                                            careers@vsgenxsolutions.com
+                                        </a>
+                                    </>
+                                )}
+                            </p>
 
 
-                        {/* // <div >
+
+                            {/* // <div >
                         //     <a href="mailto:careers@vsgenxsolutions.com" className={styles.emailLink}>
                         //         careers@vsgenxsolutions.com
                         //     </a>
                         // </div> */}
+                        </div>
                     </div>
-                </div>
                 </div>
                 {/* Simple Application Instructions */}
                 {/* Job Listings */}
