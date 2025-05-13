@@ -33,32 +33,37 @@ const CareerPageWithOpenings = () => {
                 <div className={styles.heroSection}>
                     <h1 className={styles.mainHeading}>Join Our Team</h1>
                     <p className={styles.subHeading}>
-                        VS GenX Solutions was founded with a clear mission—to empower businesses and individuals through purpose-driven, scalable HR solutions. We&#39;re looking for talented individuals who are passionate about transforming HR practices and making a meaningful impact.
+                        {"VS GenX Solutions was founded with a clear mission—to empower businesses and individuals through purpose-driven, scalable HR solutions. We're looking for talented individuals who are passionate about transforming HR practices and making a meaningful impact."}
                     </p>
                     <p className={styles.subHeading}>
-                        If you’re ready to grow with a dynamic team, thrive on innovation, and believe in creating real value, we’d love to hear from you.
-
+                        {"If you're ready to grow with a dynamic team, thrive on innovation, and believe in creating real value, we'd love to hear from you."}
                     </p>
-                </div>
-                {/* Simple Application Instructions */}
-                <div className={`${styles.section} ${styles.applicationSection}`}>
-                    <h2 className={styles.sectionHeading}>Ready to Apply?</h2>
+                    <div className={`${styles.section}`}>
+                        <h2 className={styles.sectionHeading}>Ready to Apply?</h2>
 
-                    <div className={styles.applicationContent}>
-                        <p className={styles.applicationText}>
-                            {careers && careers.length > 0
-                                ? "Email your resume, cover letter, and portfolio links with the position name in the subject line to:"
-                                : "Even though we don't have current openings, we welcome you to send your resume for future opportunities to:"}
-                        </p>
-
-                        <div className={styles.emailContainer}>
-                            <a href="mailto:careers@vsgenxsolutions.com" className={styles.emailLink}>
-                                careers@vsgenxsolutions.com
-                            </a>
+                        <div className={styles.applicationContent}>
+                            <p className={styles.applicationText}>
+                                {careers && careers.length > 0 ? (
+                                    <>
+                                        {"Email your resume, cover letter, and portfolio links with the position name in the subject line to: "}
+                                        <a href="mailto:careers@vsgenxsolutions.com" className={styles.emailLink}>
+                                            careers@vsgenxsolutions.com
+                                        </a>
+                                    </>
+                                ) : (
+                                    <>
+                                        {"Even though we don't have current openings, we welcome you to send your resume for future opportunities to: "}
+                                        <a href="mailto:careers@vsgenxsolutions.com" className={styles.emailLink}>
+                                            careers@vsgenxsolutions.com
+                                        </a>
+                                    </>
+                                )}
+                            </p>
                         </div>
                     </div>
                 </div>
-                {/* Job Listings */}
+
+                {/* Job Listings Section */}
                 <div className={styles.section}>
                     <h2 className={styles.sectionHeading}>Open Positions</h2>
 
@@ -81,12 +86,14 @@ const CareerPageWithOpenings = () => {
                                                         <span>{job.jobType}</span>
                                                     </div>
                                                 </div>
+
                                                 {/* Render HTML content safely */}
                                                 <div
                                                     className={styles.jobDescription}
                                                     dangerouslySetInnerHTML={{ __html: job.shortdescription }}
                                                 />
                                             </div>
+
                                             <div className={styles.jobBadgeContainer}>
                                                 <div className={styles.openingBadge}>
                                                     <span className={styles.openingIcon}>
@@ -111,8 +118,6 @@ const CareerPageWithOpenings = () => {
                         )}
                     </div>
                 </div>
-
-
             </div>
         </div>
     );
