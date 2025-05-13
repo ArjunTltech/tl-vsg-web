@@ -4945,6 +4945,20 @@ background-color: #FEFAF9;
   z-index: 1;
 }
 
+.purpose-text {
+  margin-top: 20px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+@media (min-width: 1140px) {
+  .purpose-text {
+    font-size: 1.6rem;
+
+  }
+}
+
+
 /*--------------------------------------------------------------
 # Case Two
 --------------------------------------------------------------*/
