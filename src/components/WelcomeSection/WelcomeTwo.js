@@ -65,19 +65,8 @@ const WelcomeTwo = ({ id = "" }) => {
         </div>
       </div>
 
-      {/* Keyframe animation inline (for slideInLeft) */}
-      <style jsx>{`
-        @keyframes slideInLeft {
-          from {
-            transform: translateX(-100px);
-            opacity: 0;
-          }
-          to {
-            transform: translateX(0);
-            opacity: 1;
-          }
-        }
-      `}</style>
+    
+     
     </section>
   );
 };
