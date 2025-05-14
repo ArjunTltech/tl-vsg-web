@@ -43,6 +43,10 @@ const NewsDetailsLeft = ({ blogDatas = {} }) => {
           </li>
         </ul>
         <h3 className="news-details__title">{title}</h3>
+
+        {/* Excerpt Section */}
+        {excerpt && <p>{excerpt}</p>}
+
         <div 
           className="news-details__text-1" 
           dangerouslySetInnerHTML={{ __html: content }}
