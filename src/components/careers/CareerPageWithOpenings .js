@@ -45,16 +45,16 @@ const CareerPageWithOpenings = () => {
                             <p className={styles.applicationText}>
                                 {careers && careers.length > 0 ? (
                                     <>
-                                        {"Email your resume, cover letter, and portfolio links with the position name in the subject line to: "}
-                                        <a href="mailto:careers@vsgenxsolutions.com" className={styles.emailLink}>
-                                            careers@vsgenxsolutions.com
+                                        {"Email your resume to "}
+                                        <a href="mailto:enablement@vsgenxsolutions.com" className={styles.emailLink}>
+                                           enablement@vsgenxsolutions.com 
                                         </a>
                                     </>
                                 ) : (
                                     <>
-                                        {"Even though we don't have current openings, we welcome you to send your resume for future opportunities to: "}
-                                        <a href="mailto:careers@vsgenxsolutions.com" className={styles.emailLink}>
-                                            careers@vsgenxsolutions.com
+                                        {"Email your resume to "}
+                                        <a href="mailto:enablement@vsgenxsolutions.com" className={styles.emailLink}>
+                                            enablement@vsgenxsolutions.com 
                                         </a>
                                     </>
                                 )}
