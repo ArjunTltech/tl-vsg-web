@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef } from "react";
 import { Image } from "react-bootstrap";
 import Link from "../Reuseable/Link";
@@ -83,7 +84,7 @@ const NewsDetailsLeft = ({ blogDatas = {} }) => {
 
   return (
     <div className="news-details__left">
-      <style jsx global>{`
+      <style>{`
         /* FIXED: JavaScript-powered counter system using data attributes */
         .news-details__text-1 {
           font-size: 16px;
