@@ -14,7 +14,7 @@ const NewsDetailsLeft = ({ blogDatas = {} }) => {
       })
     : "Unknown Date";
 
-  // Function to fix nested list counters
+
   const fixNestedListCounters = () => {
     if (!contentRef.current) return;
 
@@ -35,7 +35,7 @@ const NewsDetailsLeft = ({ blogDatas = {} }) => {
         if (!indentClass) {
           // Level 0 (main level)
           level0Counter++;
-          level1Counter = 0; // Reset all sub-levels
+          level1Counter = 0;
           level2Counter = 0;
           level3Counter = 0;
           level4Counter = 0;
@@ -46,20 +46,20 @@ const NewsDetailsLeft = ({ blogDatas = {} }) => {
           
           if (level === 1) {
             level1Counter++;
-            level2Counter = 0; // Reset deeper levels
+            level2Counter = 0; 
             level3Counter = 0;
             level4Counter = 0;
             item.setAttribute('data-counter', level1Counter);
             item.setAttribute('data-level', '1');
           } else if (level === 2) {
             level2Counter++;
-            level3Counter = 0; // Reset deeper levels
+            level3Counter = 0; 
             level4Counter = 0;
             item.setAttribute('data-counter', level2Counter);
             item.setAttribute('data-level', '2');
           } else if (level === 3) {
             level3Counter++;
-            level4Counter = 0; // Reset deeper levels
+            level4Counter = 0; 
             item.setAttribute('data-counter', level3Counter);
             item.setAttribute('data-level', '3');
           } else if (level === 4) {
@@ -74,7 +74,7 @@ const NewsDetailsLeft = ({ blogDatas = {} }) => {
 
   useEffect(() => {
     if (content) {
-      // Small delay to ensure DOM is fully rendered
+
       setTimeout(() => {
         fixNestedListCounters();
       }, 100);
